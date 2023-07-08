@@ -3,3 +3,60 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: rgb(47, 51, 51);
+}
+
+.principal {
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.perfil {
+    background-color: rgb(37, 32, 32);
+    width: 40%;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.perfil img {
+    margin: 20px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    flex-wrap: wrap;
+    border: solid 2px;
+    image-rendering: optimizeQuality;
+}
+
+.card1 {
+    color: white;
+    background-color: rgb(31, 25, 25);
+    flex-wrap: wrap;
+    margin: 30px 100px;
+    padding: 40px;
+    text-align: justify;
+}
+
+.card2 {
+    color: white;
+    background-color: rgb(31, 25, 25);
+    flex-wrap: wrap;
+    margin: 30px 100px;
+    padding: 50px;
+    text-align: justify;
+}
+
+.card3 {
+    color: white;
+    background-color: rgb(31, 25, 25);
+    flex-wrap: wrap;
+    margin: 30px 100px;
+    padding: 200px;
+    text-align: justify;
+}
