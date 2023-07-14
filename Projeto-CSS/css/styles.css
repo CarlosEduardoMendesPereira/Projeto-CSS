@@ -8,42 +8,23 @@ body {
     background-color: rgb(47, 51, 51);
 }
 
-.principal {
+.section1 {
     display: flex;
+    background-image: url(https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80);
+    background-size: 100%;
+    width: 100%;
 }
 
 .perfil {
+    background-image: url(https://media.istockphoto.com/id/952039816/pt/foto/futuristic-digital-blockchain-background-fintech-technology.jpg?s=1024x1024&w=is&k=20&c=DVpdIf7rCobbXpD9UMn6YxiEv1kEnuj9yhpIMWtzHrI=);
+    background-size: 1000px;
     background-color: rgb(31, 25, 25);
     padding-bottom: 609px;
-    width: 25%;
+    width: 400px;
     text-align: center;
     color: white;
     flex-wrap: wrap;
-}
-
-.nome1 {
-    margin-bottom: 30px;
-    font-size: 1.5em;
-}
-
-.git {
-    margin: 20px;
-}
-
-.link {
-    color: white;
-    text-decoration: none;
-}
-
-.nome2 {
-    font-size: 2em;
-    padding-bottom: 5px;
-}
-
-p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* padding-inline: 30px; */
+    border: solid 2.5px white;
 }
 
 .perfil img {
@@ -52,50 +33,164 @@ p {
     height: 260px;
     border-radius: 50%;
     flex-wrap: wrap;
-    border: solid 2px;
+    border: solid 4px white;
+}
+
+.nome1 {
+    margin-bottom: 30px;
+    font-size: 2.1em;
+}
+
+.git {
+    margin-top: 20px;
+}
+
+.shadow__btn {
+    margin: 35px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn a {
+    text-decoration: none;
+}
+
+.shadow__btn {
+    background: rgb(8, 2, 7);
+    
+}
+/**/
+
+/*////////////////////////////////////*/
+.link {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    margin: 30px;
+}
+
+.nome2 {
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+main {
+    width: calc(100%-300px);
 }
 
 .card1 {
     color: white;
-    background-color: rgb(47, 51, 51);
+    background-color: rgba(40, 8, 116, 0.411);
     flex-wrap: wrap;
-    margin: 1px 5px;
+    /* margin: 1px 5px; */
     padding: 50px;
+    padding-bottom: 1px;
     text-align: justify;
+    border: solid 1px;
 }
 
 .card2 {
     color: white;
-    background-color: rgb(47, 51, 51);
+    background-color: rgba(40, 8, 116, 0.411);
     flex-wrap: wrap;
-    margin: 5px;
-    margin-right: 100px;
+    margin: 0px;
     padding: 50px;
+    padding-right: 100px;
     text-align: justify;
+    border: solid 1px;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fundocards {
+    background-color: rgba(40, 8, 116, 0.411);
+    margin: 0px;
+    border: solid 2px;
+    color: white;
+}
+
+.cardfund {
+    width: 190px;
+    height: 454px;
+    background-image: linear-gradient(163deg, #680850 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    }
+    
+    .cardfund2 {
+    width: 190px;
+    height: 454px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+    }
+    
+    .cardfund2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    }
+    
+    .cardfund:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    }
 
 .card3 {
+    background-color: rgba(40, 8, 116, 0.411);
+    margin: 20px;
+    width: 392px;
     color: white;
-    background-color: rgb(31, 25, 25);
-    flex-wrap: wrap;
-    margin: 20px 5px;
-    padding: 50px;
-    text-align: justify;
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
 }
 
-.figura p {
-    display: inline-block;
+.card3 img {
+    background-color: rgba(40, 8, 116, 0.411);
+    width: 300px;
+    height: 290px;
+    margin: 50px;
+    border-radius: 10%;
+}
+
+.figura {
+    display: flex;
+    align-items: center;
     padding-left: 5px;
 }
 
-.emoji {
-    display: inline-block;
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 0px;
 }
 
 .botao {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -104,4 +199,62 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+/*///////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1023px){
+    .section1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    main {
+        width: 100%;
+    }
+    .perfil {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 35px;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card2 {
+        padding: 30px;
+        margin: 0px;
+    }
+    .intro {
+        gap: 10px;
+        align-items: flex-end;
+    }
+    .intro p {
+        margin: 0px;
+    }
+    .intro i {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .fundocards {
+        margin: 0px;
+    }
+    .container {
+        gap: 20px;
+    }
+    .card3 {
+        margin: 0px 0px;
+    }
+    .card3 img {
+        margin: 0px 0px;
+
+    }
 }
