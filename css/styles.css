@@ -83,7 +83,6 @@ body {
 
 h3 {
     text-align: center;
-    margin: 20px;
 }
 
 p {
@@ -134,14 +133,14 @@ main {
 .cardfund {
     width: 190px;
     height: 454px;
-    background-image: linear-gradient(163deg, #680850 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #680850 0%, #2704a5 100%);
     border-radius: 20px;
     transition: all .3s;
     }
     
     .cardfund2 {
     width: 190px;
-    height: 454px;
+    height: 524px;
     background-color: #1a1a1a;
     transition: all .2s;
     }
@@ -152,8 +151,13 @@ main {
     }
     
     .cardfund:hover {
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
-    }
+    box-shadow: 0px 0px 30px 1px rgba(223, 6, 194, 0.3);
+}
+
+.nomes3 {
+    text-align: center;
+    padding-right: 500px;
+}
 
 .card3 {
     background-color: rgba(40, 8, 116, 0.411);
@@ -173,6 +177,10 @@ main {
     height: 290px;
     margin: 50px;
     border-radius: 10%;
+}
+
+.cards {
+    margin-top: 10px;
 }
 
 .figura {
@@ -252,6 +260,14 @@ main {
     }
     .card3 {
         margin: 0px 0px;
+    }
+    .cardfund {
+        margin: 1px;
+        height: 400px;
+    }
+    .cardfund2 {
+        margin: 1px;
+        height: 400px;
     }
     .card3 img {
         margin: 0px 0px;
