@@ -8,6 +8,24 @@ body {
     background-color: rgb(47, 51, 51);
 }
 
+main {
+    width: calc(100%-300px);
+}
+
+h3 {
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+
+/*//////////////////////-LADO ESQUERDO PERFIL-////////////////////////////////////*/
 .section1 {
     display: flex;
     background-image: url(https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80);
@@ -40,62 +58,58 @@ body {
     margin-bottom: 30px;
     font-size: 2.1em;
 }
-
+/*//////////////////////-BOTÕES LADO ESQUERDO-////////////////////////////////////*/
 .git {
     margin-top: 20px;
-}
-
-.shadow__btn {
-    margin: 35px;
-    padding: 10px 20px;
-    border: none;
-    font-size: 20px;
-    color: #fff;
-    border-radius: 7px;
-    letter-spacing: 4px;
-    font-weight: 700;
-    transition: 0.5s;
-    transition-property: box-shadow;
-}
-
-.shadow__btn a {
-    text-decoration: none;
-}
-
-.shadow__btn {
-    background: rgb(8, 2, 7);
-    
-}
-
-/*////////////////////////////////////*/
-.link {
     color: white;
-    text-decoration: none;
-    text-align: justify;
-    margin: 30px;
 }
 
-.nome2 {
-    font-size: 2em;
-    padding-bottom: 5px;
+.btn {
+    width: 295px;
+    margin-bottom: 10px;
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #140511;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
 }
 
-h3 {
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-bottom: 35px;
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ffffff;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
 }
 
-p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 10px;
+.btn:hover {
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
 }
 
-main {
-    width: calc(100%-300px);
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
 }
 
+.btn:active {
+    transform: scale(0.9);
+}
+/*//////////////////////-FINAL ESQUERDO PERFIL-////////////////////////////////////*/
+
+/*//////////////////////-CARD 1- SEJA BEM VINDO-////////////////////////////////////*/
 .card1 {
     color: white;
     background-color: rgba(40, 8, 116, 0.411);
@@ -106,6 +120,25 @@ main {
     border: solid 1px;
 }
 
+.nome2 {
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.figura {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+/*//////////////////////-FINAL CARD 1- SEJA BEM VINDO-////////////////////////////////////*/
+
+/*//////////////////////-CARD 2 - JORNADA E  CONHECIMENTOS-////////////////////////////////////*/
 .card2 {
     color: white;
     background-color: rgba(40, 8, 116, 0.411);
@@ -116,6 +149,23 @@ main {
     text-align: justify;
     border: solid 1px;
 }
+
+.card2 h3 {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.card2 img {
+    display: flex;
+    flex-direction: column;
+    margin-left: 44%;
+}
+
+.card2 p {
+    text-align: center;
+    margin-left: 10%;
+}
+
 
 .html1 {
     display: flex;
@@ -138,8 +188,6 @@ main {
 
 .legendahtml {
     color: orange;
-    text-align: justify;
-    margin-left: 10%;
 }
 
 .css1 {
@@ -163,8 +211,6 @@ main {
 
 .legendacss {
     color: rgb(37, 109, 218);
-    text-align: justify;
-    margin-left: 11%;
 }
 
 .js1 {
@@ -191,17 +237,10 @@ main {
     display: flex;
     flex-direction: column;
     color: rgb(233, 218, 13);
-    text-align: justify;
-    margin-left: 9%;
 }
+/*//////////////////////-FINAL CARD 2 - JORNADA E  CONHECIMENTOS-////////////////////////////////////*/
 
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
+/*//////////////////////-CARD 3 - INSPIRAÇÕES-////////////////////////////////////*/
 .fundocards {
     background-color: rgba(40, 8, 116, 0.411);
     margin: 0px;
@@ -238,6 +277,12 @@ main {
     margin: 10px;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .card3 {
     background-color: rgb(151, 4, 127);
     margin: 20px;
@@ -265,19 +310,9 @@ main {
 .cards h3 {
     margin: 5px;
 }
+/*//////////////////////-FINAL CARD 3 - INSPIRAÇÕES-////////////////////////////////////*/
 
-.figura {
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 0px;
-}
-
+/*//////////////////////-INICIO BOTÃO FLUTUANTE-////////////////////////////////////*/
 .botao {
     width: 70px;
     height: 70px;
@@ -291,11 +326,9 @@ main {
     background-position: center;
     background-size: cover;
 }
+/*//////////////////////-FINAL BOTÃO FLUTUANTE-////////////////////////////////////*/
 
-/*///////////////////////////////////////////////////////*/
-
-/*////////////////////////////////////////////////////*/
-
+/*//////////////////////-INICIO MEDIA QUERY-////////////////////////////////////*/
 @media screen and (max-width: 1023px){
     .section1 {
         flex-direction: column;
@@ -309,6 +342,9 @@ main {
         height: fit-content;
         padding-bottom: 35px;
     }
+    .perfil .btn {
+        margin: 1% 20%;
+    }
     .section2 {
         display: flex;
         flex-direction: column;
@@ -318,14 +354,28 @@ main {
         padding: 30px;
         margin: 0px;
     }
+    .card2 h3 {
+        text-align: center;
+        margin-right: 10%;
+    }
+    .card2 img {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40%;
+    }
+    .card2 p {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+    }
     .legendahtml {
-        margin: 30px;
+        margin-left: 15px;
     }
     .legendacss {
-        margin: 39px;
+        margin-left: 20px;
     }
     .legendajs {
-        margin: 20px;
+        margin-left: 5px;
     }
     .imagens1 {
         display: flex;
@@ -378,3 +428,4 @@ main {
 
     }
 }
+/*//////////////////////-FINAL MEDIA QUERY-////////////////////////////////////*/
