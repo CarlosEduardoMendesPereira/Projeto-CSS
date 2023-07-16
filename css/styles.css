@@ -68,7 +68,7 @@ main {
     background: none;
     border: 2px solid #fff;
     font-size: 15px;
-    color: #131313;
+    color: #fdfdfd;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -84,7 +84,7 @@ main {
     position: absolute;
     width: 300px;
     height: 120%;
-    background-color: #ffffff;
+    background-color: #750a67;
     top: 50%;
     transform: skewX(30deg) translate(-150%, -50%);
     transition: all 0.5s;
