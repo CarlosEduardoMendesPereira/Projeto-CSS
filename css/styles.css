@@ -84,7 +84,7 @@ main {
     position: absolute;
     width: 300px;
     height: 120%;
-    background-color: #f8f8f8;
+    background-color: #630052;
     top: 50%;
     transform: skewX(30deg) translate(-150%, -50%);
     transition: all 0.5s;
