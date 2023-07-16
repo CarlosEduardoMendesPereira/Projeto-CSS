@@ -8,24 +8,6 @@ body {
     background-color: rgb(47, 51, 51);
 }
 
-main {
-    width: calc(100%-300px);
-}
-
-h3 {
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-bottom: 35px;
-}
-
-p {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 10px;
-}
-
-
-/*//////////////////////-LADO ESQUERDO PERFIL-////////////////////////////////////*/
 .section1 {
     display: flex;
     background-image: url(https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80);
@@ -58,14 +40,14 @@ p {
     margin-bottom: 30px;
     font-size: 2.1em;
 }
-/*//////////////////////-BOTÕES LADO ESQUERDO-////////////////////////////////////*/
+
 .git {
     margin-top: 20px;
     color: white;
 }
 
 .btn {
-    width: 295px;
+    width: 300px;
     margin-bottom: 10px;
     padding: 1.1em 2em;
     background: none;
@@ -77,7 +59,7 @@ p {
     overflow: hidden;
     transition: all 0.3s;
     border-radius: 12px;
-    background-color: #140511;
+    background-color: #000000;
     font-weight: bolder;
     box-shadow: 0 2px 0 2px #000;
 }
@@ -85,7 +67,7 @@ p {
 .btn:before {
     content: "";
     position: absolute;
-    width: 100px;
+    width: 300px;
     height: 120%;
     background-color: #ffffff;
     top: 50%;
@@ -107,9 +89,34 @@ p {
 .btn:active {
     transform: scale(0.9);
 }
-/*//////////////////////-FINAL ESQUERDO PERFIL-////////////////////////////////////*/
 
-/*//////////////////////-CARD 1- SEJA BEM VINDO-////////////////////////////////////*/
+.link {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    margin: 30px;
+}
+
+.nome2 {
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+h3 {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+main {
+    width: calc(100%-300px);
+}
+
 .card1 {
     color: white;
     background-color: rgba(40, 8, 116, 0.411);
@@ -120,25 +127,6 @@ p {
     border: solid 1px;
 }
 
-.nome2 {
-    font-size: 2em;
-    padding-bottom: 5px;
-}
-
-.intro {
-    display: flex;
-    align-items: center;
-    gap: 0px;
-}
-
-.figura {
-    display: flex;
-    align-items: center;
-    padding-left: 5px;
-}
-/*//////////////////////-FINAL CARD 1- SEJA BEM VINDO-////////////////////////////////////*/
-
-/*//////////////////////-CARD 2 - JORNADA E  CONHECIMENTOS-////////////////////////////////////*/
 .card2 {
     color: white;
     background-color: rgba(40, 8, 116, 0.411);
@@ -150,89 +138,12 @@ p {
     border: solid 1px;
 }
 
-/* .card2 img {
-    display: flex;
-    flex-direction: column;
-}
-
-.html1 {
+.container {
     display: flex;
     flex-wrap: wrap;
-    width: 22%;
-    padding: 10px;
+    justify-content: space-around;
 }
 
-.html1 {
-    box-shadow: 0 0 25px rgb(173, 55, 9);
-    border-radius: 50px;
-}
-
-.html1:hover {
-    box-shadow: 0 0 5px rgb(160, 80, 6),
-                0 0 25px rgb(223, 84, 4),
-                0 0 50px rgb(189, 67, 10),
-                0 0 100px rgb(165, 63, 4);
-}
-
-.legendahtml {
-    color: orange;
-    text-align: center;
-    margin-left: 10%;
-}
-
-.css1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 22%;
-    margin: 1%;
-}
-
-.css1 {
-    box-shadow: 0 0 25px rgb(0,140,255);
-    border-radius: 50px;
-}
-
-.css1:hover {
-    box-shadow: 0 0 5px rgb(3, 42, 172),
-                0 0 25px rgb(0,140,255),
-                0 0 50px rgb(0,140,255),
-                0 0 100px rgb(0,140,255);
-}
-
-.legendacss {
-    color: rgb(37, 109, 218);
-    text-align: center;
-    margin-left: 10%;
-}
-
-.js1 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 22%;
-    margin: 1.5%;
-}
-
-.js1 {
-    box-shadow: 0 0 25px rgb(204, 167, 3);
-    border-radius: 50px;
-    padding: 15px;
-}
-
-.js1:hover {
-    box-shadow: 0 0 5px rgb(209, 172, 4),
-                0 0 25px rgb(204, 201, 4),
-                0 0 50px rgb(192, 164, 3),
-                0 0 100px rgb(189, 192, 6);
-}
-
-.legendajs {
-    color: rgb(233, 218, 13);
-    text-align: center;
-    margin-left: 10%;
-} */
-/*//////////////////////-FINAL CARD 2 - JORNADA E  CONHECIMENTOS-////////////////////////////////////*/
-
-/*//////////////////////-CARD 3 - INSPIRAÇÕES-////////////////////////////////////*/
 .fundocards {
     background-color: rgba(40, 8, 116, 0.411);
     margin: 0px;
@@ -269,42 +180,79 @@ p {
     margin: 10px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 .card3 {
-    background-color: rgb(151, 4, 127);
+    background-color: rgba(40, 8, 116, 0.411);
     margin: 20px;
+    height: 445px;
     width: 392px;
     color: white;
-    border: solid 3px;
+    border: solid 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
 }
 
+.html-css-js {
+    display: inline-block;
+    width: 300px;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.html-css-js:hover {
+    opacity: 1;
+}
+
+.bda {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.bda:hover {
+    opacity: 1;
+}
+
+.cloud {
+    display: inline-block;
+    margin-right: 10px;
+    width: 300px;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+
+.cloud:hover {
+    opacity: 1;
+}
+
 .card3 img {
     background-color: rgba(40, 8, 116, 0.411);
     width: 300px;
     height: 290px;
-    margin: 50px;
+    margin: 5px;
     border-radius: 10%;
 }
 
 .cards {
     text-align: center;
+    margin-top: 10px;
 }
 
-.cards h3 {
-    margin: 5px;
+.figura {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
 }
-/*//////////////////////-FINAL CARD 3 - INSPIRAÇÕES-////////////////////////////////////*/
 
-/*//////////////////////-INICIO BOTÃO FLUTUANTE-////////////////////////////////////*/
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
 .botao {
     width: 70px;
     height: 70px;
@@ -318,11 +266,93 @@ p {
     background-position: center;
     background-size: cover;
 }
-/*//////////////////////-FINAL BOTÃO FLUTUANTE-////////////////////////////////////*/
+/*///////////////////BOTÃO DE LINKS////////////////////////*/
+.buttonlink {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #62079e, #0072ff);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+}
 
-/*//////////////////////-INICIO MEDIA QUERY-////////////////////////////////////*/
+.buttonlink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #000000;
+}
+
+.buttonlink:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+}
+
+.buttonlink:before,
+.buttonlink:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.buttonlink:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.buttonlink:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+/*///////////////////BOTÃO DE LINKS////////////////////////*/
+
+/*///////////////////BOTÃO FLUTUANTE////////////////////////*/
+button {
+    border: none;
+    color: #fff;
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+}
+
+button:hover {
+    background-position: center;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+    box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+/*///////////////////BOTÃO FLUTUANTE////////////////////////*/
+
 @media screen and (max-width: 1023px){
     .section1 {
+        display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -334,9 +364,6 @@ p {
         height: fit-content;
         padding-bottom: 35px;
     }
-    .perfil .btn {
-        margin: 1% 20%;
-    }
     .section2 {
         display: flex;
         flex-direction: column;
@@ -346,28 +373,15 @@ p {
         padding: 30px;
         margin: 0px;
     }
-    /* .card2 h3 {
-        text-align: center;
-        margin-right: 10%;
+    .html-css-js {
+        width: 35%;
     }
-    .card2 img {
-        display: flex;
-        flex-direction: column;
+    .bda {
+        width: 20%;
     }
-    .card2 p {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2%;
+    .cloud {
+        width: 30%;
     }
-    .legendahtml {
-        margin-left: 15px;
-    }
-    .legendacss {
-        margin-left: 20px;
-    }
-    .legendajs {
-        margin-left: 5px;
-    } */
     .imagens1 {
         display: flex;
         flex-wrap: wrap;
@@ -419,4 +433,3 @@ p {
 
     }
 }
-/*//////////////////////-FINAL MEDIA QUERY-////////////////////////////////////*/
