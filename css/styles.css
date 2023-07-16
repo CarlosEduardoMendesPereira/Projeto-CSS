@@ -194,7 +194,6 @@ main {
 }
 
 .html-css-js {
-    margin-right: 10px;
     width: 300px;
     opacity: 0.5;
     transition: 0.5s ease;
@@ -218,7 +217,6 @@ main {
 
 .cloud {
     display: inline-block;
-    margin-right: 10px;
     width: 300px;
     opacity: 0.5;
     transition: 0.5s ease;
@@ -364,10 +362,14 @@ button:hover {
         height: fit-content;
         padding-bottom: 35px;
     }
+    .btn {
+        width: 300px;
+        margin: 10px;
+    }
     .section2 {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
     .card2 {
         padding: 30px;
@@ -378,7 +380,7 @@ button:hover {
         margin: 0;
     }
     .bda {
-        width: 20%;
+        width: 15%;
     }
     .cloud {
         width: 30%;
