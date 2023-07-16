@@ -194,7 +194,7 @@ main {
 }
 
 .html-css-js {
-    display: inline-block;
+    margin-right: 10px;
     width: 300px;
     opacity: 0.5;
     transition: 0.5s ease;
@@ -206,7 +206,7 @@ main {
 
 .bda {
     display: inline-block;
-    margin: 10px;
+    margin-left: 10px;
     width: 200px;
     opacity: 0.5;
     transition: 0.5s ease;
@@ -374,7 +374,8 @@ button:hover {
         margin: 0px;
     }
     .html-css-js {
-        width: 35%;
+        width: 30%;
+        margin: 0;
     }
     .bda {
         width: 20%;
@@ -405,7 +406,6 @@ button:hover {
         font-size: 20px;
         margin-top: 35px;
     }
-
     .section3 {
         display: flex;
         flex-direction: column;
@@ -430,6 +430,5 @@ button:hover {
     }
     .card3 img {
         margin: 0px 0px;
-
     }
 }
